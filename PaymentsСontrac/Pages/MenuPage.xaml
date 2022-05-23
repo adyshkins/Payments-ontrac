@@ -5,16 +5,60 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:PaymentsСontrac.Pages"
       mc:Ignorable="d" 
-      d:DesignHeight="768" d:DesignWidth="200"
+      d:DesignHeight="768" d:DesignWidth="250"
       Title="MenuPage">
 
     <Grid>
         <StackPanel VerticalAlignment="Center">
             <Button x:Name="btnMain"
-                    Width="150"
-                    Height="35"
-                    Background="#E3E3FF"/>
+                    Style="{StaticResource buttonMenuStyle1}">
+                <TextBlock Text="Главная"
+                           FontSize="20"/>
+            </Button>
+
+            <Button x:Name="btnAddContract"
+                    Style="{StaticResource buttonMenuStyle1}">
+
+                <TextBlock Text="Новый договор"
+                           FontSize="20"/>
+            </Button>
+
+            <Button x:Name="btnListContract"
+                    Style="{StaticResource buttonMenuStyle1}">
+                <TextBlock Text="Список договоров"
+                           FontSize="20"/>
+            </Button>
+
+            <Button x:Name="btnPay"
+                    Style="{StaticResource buttonMenuStyle1}">
+
+                <TextBlock Text="Провести платеж"
+                           FontSize="20"/>
+            </Button>
+
+            <Button x:Name="btnListEmployee"
+                    Style="{StaticResource buttonMenuStyle1}">
+
+                <TextBlock Text="Список сотрудников"
+                           FontSize="18"/>
+            </Button>
+
+            <Button x:Name="btnListClient"
+                    Style="{StaticResource buttonMenuStyle1}">
+
+                <TextBlock Text="Список клиентов"
+                           FontSize="18"/>
+            </Button>
         </StackPanel>
-      
+
+        <Button x:Name="btnExit"
+                Width="35"
+                Height="35"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Style="{StaticResource buttonMenuStyle1}">
+            <Image Source="/PaymentsСontrac;component/Res/login.png"/>
+        </Button>
+
     </Grid>
 </Page>
